@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">📝</div>
+        <h1>Lista de Tareas</h1>
+        <nav>
+            <a href="#nuevas">Nuevas</a>
+            <a href="#pendientes">Pendientes</a>
+            <a href="#completadas">Completadas</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="board">
+            <div class="column" id="nuevas">
+                <h2>Por hacer</h2>
+                <div class="task priority1">
+                    <h3><input type="checkbox" class="task-checkbox">Enviar proyecto</h3>
+                    <p>Enviar el proyecto completado</p>
+                    <div class="task-fecha">Vence: 21/10/2024</div>
+                </div>
+                <div class="task priority2">
+                    <h3><input type="checkbox" class="task-checkbox">Hostear pagina</h3>
+                    <p>Hostear el proyecto en vercel</p>
+                    <div class="task-fecha">Vence: 21/10/2024</div>
+                </div>
+                <div class="task priority3">
+                    <h3><input type="checkbox" class="task-checkbox">Subir proyecto</h3>
+                    <p>Subir proyecto a github</p>
+                    <div class="task-fecha">Vence: 20/10/2024</div>
+                </div>
+            </div>
+
+            <div class="column" id="pendientes">
+                <h2>En progreso</h2>
+                <div class="task priority1">
+                    <h3><input type="checkbox" class="task-checkbox">Aplicar CSS</h3>
+                    <p>Agregar estilo con css a la pagina</p>
+                    <div class="task-fecha">Vence: 20/10/2024</div>
+                </div>
+            </div>
+
+            <div class="column" id="completadas">
+                <h2>Completadas</h2>
+                <div class="task completed">
+                    <h3><input type="checkbox" checked class="task-checkbox">Pagina tareas</h3>
+                    <p>Pagina web para ver tareas completadas y pendientes</p>
+                    <div class="task-fecha">Completada: 20/10/2024</div>
+                </div>
+                <div class="task completed">
+                    <h3><input type="checkbox" checked class="task-checkbox">Desarrollar html y css</h3>
+                    <p>Desarrollar el html de la pagina web</p>
+                    <div class="task-fecha">Completada: 20/10/2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
